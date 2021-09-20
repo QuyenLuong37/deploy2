@@ -50,6 +50,5 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'quyenluong97'
-        slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_040901fe04ff4724a8ab5ba5e4bed4ad }}
-        package: .
+        package: ./dist/deploy2
